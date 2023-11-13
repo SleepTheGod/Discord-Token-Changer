@@ -1,2 +1,2 @@
 # Discord-Token-Changer
-Real Actual Token Changer No Malware
+The Python script utilizes the requests library to interact with the Discord API for the purpose of changing a user's password. The change_password function takes a Discord token and a new password as parameters, constructs the necessary headers and payload for the API request, and sends a PATCH request to the users/@me endpoint to update the current user's information with the new password. The script prompts the user to input their Discord token and the desired new password. Upon execution, it displays whether the password change was successful based on the HTTP status code of the API response, notifying the user with either "Password changed successfully!" or "Failed to change password."
