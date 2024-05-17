@@ -6,9 +6,10 @@ def change_password(token, new_password):
         'Authorization': token,
         'Content-Type': 'application/json'
     }
-    payload = {
-        'password': new_password
-    }
+ payload = {
+        'password': "password here",
+        'new_password': new_password
+ }
     response = requests.patch('https://discord.com/api/v10/users/@me', headers=headers, json=payload)
     if response.status_code == 200:
         print("Password changed successfully!")
